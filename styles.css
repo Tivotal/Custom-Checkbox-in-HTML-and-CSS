@@ -1,0 +1,90 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #0b8c4c;
+  user-select: none;
+}
+
+.wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 210px;
+  width: 260px;
+  border-radius: 10px;
+  background: #ecf0f1;
+}
+
+.wrapper .header {
+  position: absolute;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #0b8c4c;
+}
+
+.wrapper .titles {
+  padding: 40px 30px;
+}
+
+.wrapper .titles .title {
+  margin: 25px 0;
+  font-weight: 500;
+}
+
+.wrapper .btns {
+  position: absolute;
+  top: 68px;
+  left: 200px;
+}
+
+.wrapper .btns input:nth-child(2),
+.wrapper .btns input:nth-child(3) {
+  margin-top: 25px;
+}
+
+.wrapper .btns input {
+  position: relative;
+  height: 18px;
+  width: 36px;
+  background: #fff;
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
+  appearance: none;
+  transition: 0.5s;
+}
+
+.wrapper .btns input:checked {
+  background: #0b8c4c;
+}
+
+.wrapper .btns input::before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  background: linear-gradient(#fff, #f2f2f2, #e6e6e6, #d9d9d9);
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+}
+
+.wrapper .btns input:checked:before {
+  left: 18px;
+}
